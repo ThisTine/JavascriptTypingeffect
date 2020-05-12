@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing text</title>
+    <style media="screen">
+      /* Require css */
+      #h1overflow{
+        overflow:hidden;
+      }
+      h1{
+        display:flex;
+      }
+      #icon{
+        width:30px; /*change the pixel so the display is not wired */
+      }
+
+
+      /* not require */
+      body{
+        background:#ecf0f1;
+        margin:0;
+        padding:0;
+        display: flex;
+        width:100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      h1{
+        color:#2c3e50;
+        font-size:50px;
+      }
+      #icon{
+        margin-left:10px;
+        width:30px;
+      }
+      #github{
+        position:absolute;
+        bottom:50px;
+      }
+      p{
+        font-size:15px;
+      }
+      a{
+        text-decoration:none;
+        color:#333;
+        font-size:20px;
+      }
+      a:hover{
+        border-bottom: #8e44ad solid 3px;
+        color:#8e44ad;
+        transition:0.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="h1overflow">
+      <h1>
+          <span id="typing"></span>
+          <span id="icon"></span>
+      </h1>
+    </div>
+    <div id="github">
+      <p>view this project on <a href="https://github.com/ThisTine/JavascriptTypingeffect">Github</a> </p>
+    </div>
+  </body>
+  <script src="./typing.js"></script>
+</html>
